@@ -1,0 +1,13 @@
+at\phi1994\bean\LoginBean.class
+at\phi1994\application\EntityManagerProvider.class
+at\phi1994\service\CountryService.class
+at\phi1994\model\User.class
+at\phi1994\bean\DashboardBean.class
+at\phi1994\bean\CountryConverter.class
+at\phi1994\model\Measurement.class
+at\phi1994\service\MeasurementService.class
+at\phi1994\model\Country.class
+at\phi1994\service\UserService.class
+at\phi1994\filters\AuthenticationFilter.class
+at\phi1994\bean\LandingPageBean.class
+at\phi1994\application\LikeHeroToZero.class

@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:f="http://java.sun.com/jsf/core">
+<h:head>
+	<title>Like Hero To Zero</title>
+	<h:outputStylesheet name="css/style.css" />
+</h:head>
+<h:body style="display:flex;flex-direction:column;align-items:center;">
+	<p:link value="Zurück" outcome="home.xhtml" styleClass="top-right" />
+
+	<h:form id="form">
+		<p:growl>
+			<p:autoUpdate/>
+		</p:growl>
+
+		<h:panelGrid columns="2" cellpadding="7" styleClass="mb-3">
+			<h:inputText value="#{login.username}"/>
+			<p:outputLabel for="@previous" value="Benutzername"/>
+
+			<h:inputSecret value="#{login.password}"/>
+			<p:outputLabel for="@previous" value="Passwort"/>
+		</h:panelGrid>
+
+		<p:commandButton value="Anmelden" id="btn1" action="#{login.login()}" ajax="false" styleClass="mr-2" />
+	</h:form>
+</h:body>
+</html>
